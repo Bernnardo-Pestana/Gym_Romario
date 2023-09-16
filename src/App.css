@@ -1,0 +1,37 @@
+.body{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+
+.sidebar{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}
+
+.navbar{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  
+}
+
+.flex-mobile{
+  display: flex;
+  flex-direction: column-reverse;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.main{
+  grid-column-start:2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+}

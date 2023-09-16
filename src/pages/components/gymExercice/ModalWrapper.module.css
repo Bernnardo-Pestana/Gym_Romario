@@ -1,0 +1,46 @@
+.modalCustom {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #2b2b2b;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  padding: 0;
+   
+}
+
+.modalContent {
+  /* max-height: 30em; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: '90vh'
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  margin-top: 0;
+}
+
+
+.modalCustomLoading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #d3d0d00c;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  padding: 0;
+}
+

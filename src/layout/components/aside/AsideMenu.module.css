@@ -1,0 +1,15 @@
+@media only screen and (min-width: 992px) {
+  .leftMenu {
+    overflow-y: scroll;
+    max-height: 80vh;
+  }
+
+
+}
+
+.aside{
+  width: 13vw;
+  height: 80vh;
+  max-height: 80vh;
+}
+

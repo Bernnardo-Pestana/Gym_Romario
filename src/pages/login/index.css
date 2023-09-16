@@ -1,0 +1,18 @@
+.main {
+    width: 100vw;
+}
+
+.img {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img2 {
+    height: 40vh;
+    width: 35vw;
+}
+
+
+

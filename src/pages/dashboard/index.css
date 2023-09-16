@@ -1,0 +1,31 @@
+.parkingLot {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../public/parkingLot.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+
+}
+
+.alters {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../public/alters.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 200px;
+
+}
+
+.text {
+    filter: brightness(100%);
+}
+
+
+@media only screen and (max-width: 450px) {
+    .alters{
+        width: 250px;
+        height: 250px;
+    }
+}

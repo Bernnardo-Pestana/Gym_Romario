@@ -1,0 +1,11 @@
+.conteudo {
+    width: 75vw;
+    height: 80vh;
+    display: flex;
+}
+
+@media (min-width: 900px) {
+    #AsideDefault {
+        display: none;
+    }
+}

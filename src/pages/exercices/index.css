@@ -1,0 +1,14 @@
+.exercice{
+    width: 50%;
+}
+
+.exerciceContainer{
+    height: 50vh;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .exercice{
+        width: 100%;
+    }
+}

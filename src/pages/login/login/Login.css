@@ -1,0 +1,24 @@
+.iconClose {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.borderTriangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 75px 150px 0;
+  border-color: transparent #fffcfc transparent transparent;
+}
+
+
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 25vh solid transparent;
+  border-bottom: 25vh solid transparent; 
+  height: 38vh;
+  width: 40%;
+  border-right: 20vh solid rgb(2, 2, 129); 
+}
