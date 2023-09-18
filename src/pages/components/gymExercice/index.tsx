@@ -141,7 +141,7 @@ const GymItem: FC<any> = ({ item, day }) => {
                 }
                 <div className="d-flex justify-content-between me-1 card-footer">
                     <span className=" text-white fw-lighter">Limit</span>
-                    <span className=" text-white fw-lighter">{item.booked} / {item.limit}</span>
+                    <span className=" text-white fw-lighter">{item.limit - item.remaining} / {item.limit}</span>
                 </div>
             </div>
 

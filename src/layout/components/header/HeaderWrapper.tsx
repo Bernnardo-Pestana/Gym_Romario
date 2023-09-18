@@ -35,6 +35,10 @@ export function HeaderWrapper() {
             </li>
 
             <li className="nav-item">
+              <a className="nav-link" aria-current="page" onClick={() => navigate('/history')}>History</a>
+            </li>
+
+            <li className="nav-item">
               <a className="nav-link" aria-current="page" onClick={() => navigate('/settings')}>Settings</a>
             </li>
 

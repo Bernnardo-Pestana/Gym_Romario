@@ -4,6 +4,7 @@ import { MasterLayout } from '../layout/MasterLayout'
 import { Exercises } from "../pages/exercices"
 import { Setting } from "../pages/setings"
 import { UpdateUser } from "../pages/user/create"
+import { History } from "../pages/historico"
 
 const PrivateRoutes = () => {
     return (
@@ -16,6 +17,7 @@ const PrivateRoutes = () => {
 
                 <Route path='dashboard' element={<Dashboard />} />
                 <Route path='exercises' element={<Exercises />} />
+                <Route path='history' element={<History />} />
                 <Route path='settings' element={<Setting />} />
                 <Route path='user/update' element={<UpdateUser />} />
             </Route>

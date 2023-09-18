@@ -28,7 +28,7 @@ const Exercises: FC<any> = () => {
 
         const split = day.toLocaleString('en-GB').split(',')
 
-        const dateToSpeak =  day.toLocaleDateString('en-us', { weekday:"long"}) 
+        const dateToSpeak = day.toLocaleDateString('en-us', { weekday: "long" })
 
         SetDay(split[0])
 
@@ -40,7 +40,10 @@ const Exercises: FC<any> = () => {
     const initializeDashboard = async () => {
         try {
             setLoading(true)
-            const exercicesRes = await POST('/tasks/day', { day: daySelected, date: unFormatedDay.toISOString() })
+
+            
+
+            const exercicesRes = await POST('/tasks/info', { day:  new Date().getDay(), date: unFormatedDay.toISOString() })
             setExercices(exercicesRes)
             setLoading(false)
         } catch (e) {
@@ -62,11 +65,14 @@ const Exercises: FC<any> = () => {
 
         SetDay(split[0])
 
-        const dateToSpeak =  yesterday.toLocaleDateString('en-us', { weekday:"long"}) 
+        const dateToSpeak = yesterday.toLocaleDateString('en-us', { weekday: "long" })
 
         setText(`Day selected: ${dateToSpeak}`)
 
-        await initializeDashboard();
+        setLoading(true)
+        const exercicesRes = await POST('/tasks/info', { day: yesterday.getDay(), date: yesterday.toISOString() })
+        setExercices(exercicesRes)
+        setLoading(false)
     }
 
     const daysAfter = async () => {
@@ -82,12 +88,14 @@ const Exercises: FC<any> = () => {
 
         SetDay(split[0])
 
-        SetDay(split[0])
 
-        const dateToSpeak =  tomorrow.toLocaleDateString('en-us', { weekday:"long"}) 
+        const dateToSpeak = tomorrow.toLocaleDateString('en-us', { weekday: "long" })
         setText(`Day selected: ${dateToSpeak}`)
 
-        await initializeDashboard();
+        setLoading(true)
+        const exercicesRes = await POST('/tasks/info', { day: tomorrow.getDay(), date: tomorrow.toISOString() })
+        setExercices(exercicesRes)
+        setLoading(false)
     }
 
 
