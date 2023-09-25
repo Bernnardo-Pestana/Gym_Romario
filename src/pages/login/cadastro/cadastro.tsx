@@ -40,10 +40,10 @@ const Cadastro: FC<any> = () => {
         if (!name || !surname || !password || !age || !email || !postCode || !city || !addressLine2 || !addressLine1) {
             Swal.fire({
                 title: 'Error!',
-                text: 'Do you want to continue',
-                icon: 'error',
-                confirmButtonText: 'Cool'
+                text: 'Please review the form and submit again.',
+                icon: 'warning',
             })
+            return
         } else {
             try {
                 setLoading(true)

@@ -32,7 +32,7 @@ const Exercises: FC<any> = () => {
 
         SetDay(split[0])
 
-        setText(`Welcome to your smart Gym,Down here you can see all exercices we can offer today, you can select other days, and book a spot. Day selected: ${dateToSpeak}`)
+        setText(`Here are the exercises we offer today. Please select the date and the exercises you'd like to book. Day selected: ${dateToSpeak}`)
 
         await initializeDashboard();
     }
@@ -114,7 +114,7 @@ const Exercises: FC<any> = () => {
                             <h3 className='card-title align-items-center d-flex justify-content-between w-100  '>
                                 <span className='card-label fw-bolder fs-5 mb-1 text-white'>Welcome to your smart Gym</span>
                             </h3>
-                            <span className="text-white">Down here you can see all exercices we  can offer today, you can select other days to you can select other days to and book a spot.</span>
+                            <span className="text-white">Here are the exercises we offer today. Please select the date and the exercises you'd like to book.</span>
                         </div>
                         <div className='card-body text-white d-flex justify-content-center'>
                             {exercices &&
