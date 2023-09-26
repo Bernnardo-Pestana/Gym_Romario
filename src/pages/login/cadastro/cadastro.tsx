@@ -57,7 +57,8 @@ const Cadastro: FC<any> = () => {
                     "addressLine1": addressLine1,
                     "addressLine2": addressLine2,
                     "city": city,
-                    "postCode": postCode
+                    "postCode": postCode,
+                    "profilePic":"a"
                 })
 
 
