@@ -6,7 +6,7 @@ if (!loginData) loginData = localStorage.getItem('loginInfo')
 let loginDataAdm = localStorage.getItem('loginInfo')
 
 const api = axios.create({
-    baseURL: process.env.REACT_APP_API_URL,
+    baseURL: 'http://165.232.153.236:3031',
     headers: {
         Authorization:
             loginData && typeof loginData === 'string'
@@ -16,7 +16,7 @@ const api = axios.create({
 })
 
 const apiAdm = axios.create({
-    baseURL: process.env.REACT_APP_API_URL,
+    baseURL: 'http://165.232.153.236:3031',
     headers: {
         Authorization:
             loginDataAdm && typeof loginDataAdm === 'string'
